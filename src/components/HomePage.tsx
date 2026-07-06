@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedStatNumber from "./animation";
 
 interface HomePageProps {}
 
@@ -42,17 +43,26 @@ const HomePage: React.FunctionComponent<HomePageProps> = () => {
             <tbody>
               <tr>
                 <td>
-                  <span className="ourServiceStatNumber">30+</span>
+                  <AnimatedStatNumber
+                    target={30}
+                    formatter={(value) => `${value}+`}
+                  />
                   <span className="ourServiceStatLabel">שנות ניסיון</span>
                 </td>
 
                 <td>
-                  <span className="ourServiceStatNumber">10/10</span>
+                  <AnimatedStatNumber
+                    target={10}
+                    formatter={(value) => `${value}/10`}
+                  />
                   <span className="ourServiceStatLabel"> איכות שירות</span>
                 </td>
 
                 <td>
-                  <span className="ourServiceStatNumber">100%</span>
+                  <AnimatedStatNumber
+                    target={100}
+                    formatter={(value) => `${value}%`}
+                  />
                   <span className="ourServiceStatLabel">לקוחות מרוצים</span>
                 </td>
               </tr>

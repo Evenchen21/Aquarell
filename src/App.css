@@ -236,13 +236,14 @@ html {
   margin-top: 2rem;
   background: linear-gradient(180deg, #3f2c22 0%, #2b1f19 100%);
   border-bottom: 6px solid #6e5642;
-  padding: 2.5rem 1rem;
+  padding: 3.25rem 1rem;
 }
 
 .socialShell {
   width: min(1200px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.75rem 2rem;
+  min-height: 230px;
   border-radius: 20px;
   background: rgba(43, 31, 25, 0.55);
   border: 1px solid rgba(185, 138, 69, 0.35);
@@ -406,12 +407,13 @@ html {
   }
 
   .socialSection {
-    padding: 1.5rem 0.75rem;
+    padding: 2rem 0.75rem;
   }
 
   .socialShell {
     width: min(100%, calc(100% - 1rem));
-    padding: 1.25rem;
+    padding: 1.6rem 1.25rem;
+    min-height: 200px;
   }
 
   .socialGrid {

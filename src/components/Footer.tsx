@@ -6,7 +6,7 @@ interface FooterProps {}
 const Footer: React.FunctionComponent<FooterProps> = () => {
   return (
     <footer className="container-fluid py-4 text-center">
-      <div className="d-flex flex-column align-items-center gap-3">
+      <div className="d-flex flex-column align-items-center gap-1">
         <img
           src="/logo192.png"
           alt="Logo"
@@ -48,7 +48,18 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
         </a>
       </div>
       <div className="mt-4">
-        <p>© 2026 אקוורל גלריה למסגור תמונות. כל הזכויות שמורות- DarkPulse</p>
+        <p>
+          © 2026 אקוורל גלריה למסגור תמונות. כל הזכויות שמורות-
+          <a
+            href="https://github.com/Evenchen21"
+            target="_blank"
+            rel="noreferrer"
+            className="text-decoration-none"
+            style={{ color: "#B98A45" }}
+          >
+            DarkPulse
+          </a>
+        </p>
       </div>
     </footer>
   );
