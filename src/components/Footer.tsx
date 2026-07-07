@@ -6,19 +6,19 @@ interface FooterProps {}
 const Footer: React.FunctionComponent<FooterProps> = () => {
   return (
     <footer className="container-fluid py-4 text-center">
-      <div className="d-flex flex-column align-items-center gap-1">
+      <div className="d-flex flex-column align-items-center gap-2">
         <img
           src="/logo192.png"
           alt="Logo"
-          width="130"
-          height="130"
+          width="200"
+          height="200"
           className="d-inline-block"
         />
         <span className="mb-0 lh-1" style={{ color: "#B98A45" }}>
           אקוורל גלריה למסגור תמונות
         </span>
       </div>
-      <div className="d-flex flex-wrap justify-content-center gap-4 mt-4">
+      <div className="footerLinksWrap d-flex flex-wrap justify-content-center gap-4 mt-4">
         <a
           className="mb-0 lh-1 text-decoration-none nav-hover-link"
           href="#homeImage"
@@ -37,7 +37,21 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
           className="mb-0 lh-1 text-decoration-none nav-hover-link"
           href="#SocialMediaFollowUs"
         >
-          אודות
+          תעקבו אחרינו
+        </a>
+
+        <a
+          className="mb-0 lh-1 text-decoration-none nav-hover-link"
+          href="#workingHoursSection"
+        >
+          שעות פעילות
+        </a>
+
+        <a
+          className="mb-0 lh-1 text-decoration-none nav-hover-link"
+          href="#locationSection"
+        >
+          המיקום שלנו
         </a>
 
         <a
@@ -46,18 +60,24 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
         >
           צרו קשר
         </a>
+
+        <a
+          className="mb-0 lh-1 text-decoration-none nav-hover-link"
+          href="#faqSection"
+        >
+          שאלות נפוצות
+        </a>
       </div>
       <div className="mt-4">
         <p>
-          © 2026 אקוורל גלריה למסגור תמונות. כל הזכויות שמורות-
+          אקוורל גלריה למסגור תמונות - כל הזכויות שמורות 2026 © -
           <a
             href="https://github.com/Evenchen21"
             target="_blank"
             rel="noreferrer"
-            className="text-decoration-none"
-            style={{ color: "#B98A45" }}
+            className="text-decoration-none darkPulseLink"
           >
-            DarkPulse
+            <span> </span>DarkPulse
           </a>
         </p>
       </div>

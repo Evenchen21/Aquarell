@@ -14,9 +14,19 @@ const workDays = [
 
 const WorkingHours: React.FunctionComponent<WorkingHoursProps> = () => {
   return (
-    <section className="workingHoursSection" aria-label="שעות פעילות">
+    <section
+      id="workingHoursSection"
+      className="workingHoursSection"
+      aria-label="שעות פעילות"
+    >
       <div className="workingHoursShell">
-        <h2 className="workingHoursTitle">שעות פעילות</h2>
+        <h2 className="workingHoursTitle">
+          שעות פעילות
+          <i
+            className="fa-regular fa-clock workingHoursTitleIcon"
+            aria-hidden="true"
+          ></i>
+        </h2>
         <div className="workingHoursTableWrap">
           <table className="workingHoursTable">
             <tbody>
@@ -24,7 +34,13 @@ const WorkingHours: React.FunctionComponent<WorkingHoursProps> = () => {
                 <tr key={day}>
                   <td className="workingHoursDay">{day}</td>
                   <td className="workingHoursTime">{evening || "-"}</td>
-                  <td className="workingHoursTime">{morning}</td>
+                  <td
+                    className={`workingHoursTime ${
+                      morning === "סגור" ? "workingHoursTimeClosed" : ""
+                    }`}
+                  >
+                    {morning}
+                  </td>
                 </tr>
               ))}
             </tbody>

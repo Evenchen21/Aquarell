@@ -64,6 +64,27 @@ const NavigationBar: React.FunctionComponent<NavigationBarProps> = () => {
 
               <a
                 className="nav-link mb-0 lh-1 text-decoration-none nav-hover-link"
+                href="#SocialMediaFollowUs"
+              >
+                תעקבו אחרינו
+              </a>
+
+              <a
+                className="nav-link mb-0 lh-1 text-decoration-none nav-hover-link"
+                href="#workingHoursSection"
+              >
+                שעות פעילות
+              </a>
+
+              <a
+                className="nav-link mb-0 lh-1 text-decoration-none nav-hover-link"
+                href="#locationSection"
+              >
+                המיקום שלנו
+              </a>
+
+              <a
+                className="nav-link mb-0 lh-1 text-decoration-none nav-hover-link"
                 href="#CcontactusSection"
               >
                 צרו קשר
@@ -71,9 +92,9 @@ const NavigationBar: React.FunctionComponent<NavigationBarProps> = () => {
 
               <a
                 className="nav-link mb-0 lh-1 text-decoration-none nav-hover-link"
-                href="#SocialMediaFollowUs"
+                href="#faqSection"
               >
-                אודות
+                שאלות נפוצות
               </a>
             </div>
           </div>

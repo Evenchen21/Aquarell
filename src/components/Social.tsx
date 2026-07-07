@@ -10,7 +10,13 @@ const Social: React.FunctionComponent<SocialProps> = () => {
       aria-label="קישורי מדיה חברתית"
     >
       <div className="socialShell">
-        <h2 className="socialTitle"> תעקבו אחרינו</h2>
+        <h2 className="socialTitle">
+          תעקבו אחרינו
+          <i
+            className="fa-solid fa-share socialTitleIcon"
+            aria-hidden="true"
+          ></i>
+        </h2>
         <div className="socialGrid">
           <a
             className="socialLink"

@@ -6,17 +6,7 @@ interface HomePageProps {}
 const HomePage: React.FunctionComponent<HomePageProps> = () => {
   return (
     <>
-      <div
-        id="homeImage"
-        className="container-fluid p-0 homeImage"
-        style={{
-          position: "relative",
-          height: "100vh",
-          overflow: "hidden",
-          borderRadius: "0 0 50% 50% / 0 0 10% 10%",
-          borderBottom: "6px solid #6E5642",
-        }}
-      >
+      <div id="homeImage" className="container-fluid p-0 homeImage">
         <img
           src="/mainPhoto.png"
           className="main-hero-image"
@@ -25,8 +15,12 @@ const HomePage: React.FunctionComponent<HomePageProps> = () => {
       </div>
       <div>
         <div id="ourService" className="ourService">
-          <h1 style={{ textDecoration: "underline", color: "#B98A45" }}>
+          <h1 className="ourServiceTitle">
             השירות שלנו
+            <i
+              className="fa-regular fa-heart ourServiceTitleIcon"
+              aria-hidden="true"
+            ></i>
           </h1>
           <p className="ourServiceText">
             באקוורל אנו מאמינים שכל תמונה, יצירת אמנות או מראה ראויה למסגרת

@@ -5,8 +5,14 @@ interface FormProps {}
 const Form: React.FunctionComponent<FormProps> = () => {
   return (
     <section id="CcontactusSection" className="contactFormSection">
-      <div className="contactFormShell">
-        <h2 className="contactFormTitle">צרו קשר</h2>
+      <div className="contactFormShell" style={{ marginBottom: "4rem" }}>
+        <h2 className="contactFormTitle">
+          צרו קשר
+          <i
+            className="fa-regular fa-envelope contactFormTitleIcon"
+            aria-hidden="true"
+          ></i>
+        </h2>
 
         <form
           className="contactForm"
