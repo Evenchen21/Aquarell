@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { animate } from "motion";
-
-animate("#box", { x: 100 });
 
 const AnimatedStatNumber = ({
   target,
